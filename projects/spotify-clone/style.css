@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Poppins:wght@100;200;300;400;500;600;700;900&family=Roboto:wght@300;900&display=swap');
+
+*,
+*::after,
+*::before {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --darkblue: #03203C;
+    --white: #fff;
+    --lightgrey: #aaa;
+    --grey: #444; 
+    --lightgreen: #16a083;
+    --black: #000;
+    --darkwhite: #eff4fcf5;
+    --greydark: #555;
+    --golden: #ff9529;
+    --lightgreydark: #ddd;
+}
+
+/* ######### navbar #################### */
+
+.navbar{
+
+    /* border: 2px solid red; */
+    /* position: fixed; */
+    width: 100%;
+    z-index: 999;
+
+
+}
+
+.navbar-container{
+
+    /* border: 2px solid red; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 64px;
+    list-style-type: none;
+    background-color: var(--black);
+
+}
+
+
+/* #### image######### */
+.navbar-container img {
+    height: 44px;
+    width: 44px;
+    margin-left: 0.5em ;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+
+.brand span {
+    padding-left: 0.5em;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.list{
+    /* border: 2px solid blue; */
+    color: var(--white);
+    font-size: 1.4rem;
+    padding: 0px 12px;
+}
+
+/* ############################################################### */
+
+.main-container{
+
+    /* border: 2px solid red; */
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: 23px auto;
+    border-radius: 12px;
+    background: url(./img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.col-left{
+
+    width:40%;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 600;
+    /* text-align: center; */
+    margin: 2rem;;
+
+    /* border: 2px solid red; */
+}
+
+/* ############### song item ###########   */
+
+.song-item{
+
+    height: 40px;
+    display: flex;
+    background-color: var(--white);
+    width: 100%;
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+
+.song-item img {
+
+    width: 3.5rem;
+    margin: 0 23px;
+    border-radius: 50%;
+}
+
+.song-item span {
+
+    padding-right: 1rem;
+}
+
+.timestamp i {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    /* border: 2px solid red;; */
+}
+
+.song-items {
+    margin-top: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+
+    background-color: var(--black);
+    color: var(--white);
+    height: 11.5vh;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myprogressbar {
+
+    width: 70vw;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+footer .icons{
+    /* border: 2px solid red; */
+    padding: 1em;
+}
+
+.icons i{
+    margin: 0em 0.3em;
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left:15vw;
+    /* border: 2px solid red; */
+    font-size: 1.2rem;
+    
+}
+.songInfo img {
+    width: 5rem ;
+    margin-right: 5px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+
+}
+.songInfo span {
+
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+    .col-left{
+
+        width:100%;
+        text-align: center;
+    }
+    .main-container{
+        background: var(--black);
+    }
+
+    .songInfo {
+        left:10vw;
+    }
+}

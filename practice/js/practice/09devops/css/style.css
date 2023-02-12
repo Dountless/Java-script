@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Roboto:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Mulish:ital,wght@0,400;0,900;1,300&family=Oswald:wght@200;700&display=swap');
+body{
+    background-color: #fff;
+    color: #fff;
+    font-family: "Montserrat" , serif;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+/* ################### nav bar ################ */
+nav {
+    display: flex;
+    padding-top: 15px;
+}
+
+nav .brand-img{
+    flex: 1;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Mulish';
+}
+
+nav .nav-items{
+    flex: 2 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav .btn {
+    font-size: 14px;
+    text-align: center;
+    border: none; 
+    /* padding: 1.2em 2.5em; */
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+nav .button {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    
+    align-items: center;
+}
+nav .btn1{
+
+    background: transparent;
+    color: #fff;
+    border: 1px solid #207398;
+}
+nav .btn2{
+    color: #758283;
+    padding: 12px 20px;
+}
+
+nav .btn:hover{
+    
+    color:#207398;
+    background-color: #fff;
+    /* border: none; */
+    transition: background-color  300ms ease-in-out ,color 300ms ease-in-out;
+}
+
+.button i{
+    color:#207398;
+    margin:2px;
+    padding:0px;
+    
+}
+
+
+.logo-img img{
+    /* background: none; */
+    height: 50px;
+    margin: 0px 50px;
+    margin-top: 20px;
+
+}
+
+
+/* ######## header############# */
+header {
+
+    height: 120vh;
+    width: 100vw;
+    background-image:url(../image/image_processing20200515-3774-171bpjx.png);
+    background-size: cover;
+    background-position: right;
+    /* clip-path: polygon(100% 0, 100% 77%, 93% 100%, 0 71%, 0 0); */
+    clip-path: polygon(100% 0, 100% 82%, 93% 90%, 0 79%, 0 0);
+    background-color: rgba(0, 0, 0, 0.700);
+    
+}
+
+
+
+.headline {
+    /* border: 2px solid yellow; */
+    width: 500px;
+    margin-top: 5%;
+}
+.headline h1 {
+
+    font-size: 75px;
+    text-align: center;
+    font-weight: 900;
+    /* margin:30px */
+}
+
+.headline p{
+    margin-left: 20%;
+    text-transform: capitalize;
+}
+
+/* ################## main #################### */
+
+.content{
+    height:500px;
+}
+.about {
+    background: #141414;
+    height: 900px;
+
+    clip-path: polygon(25% 0%, 100% 30%, 100% 50%, 85% 76%, 0 98%, 0 0);
+}
+
+
+

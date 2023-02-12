@@ -1,0 +1,158 @@
+body {
+    background-image: url(../images/bg.png);
+    background-position: center; 
+    background-size: cover;
+    height: 100vh;
+    margin: 0 5%;
+  
+}
+:root {
+    --pink: #E03B8B;
+    --white: #fff;
+}
+
+
+
+.nav-link{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 25px;
+}
+nav .nav-menu-icon{
+    display: none;
+}
+
+
+nav {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+}
+
+/* border */
+/* nav .nav-items , .brand-image {
+    border: 2px solid yellow;
+} */
+/* border */
+
+nav .nav-items{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+
+nav .brand-image{
+    flex: 1;
+    margin: auto;
+}
+
+nav .nav-logo{
+    display: block;
+}
+
+.brand-image  img {
+    height: 80px;
+}
+
+nav .nav-button {
+    background-color: var(--pink);
+    border: none;
+    padding: 5px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* .col {
+    border: 2px solid yellow;
+} */
+.container {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 80vh;
+}
+
+.col{
+    flex:0.5;
+    display: flex;
+}
+.col-2{
+    overflow: hidden;
+
+}
+
+.col-2 .phone-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80%;
+}
+
+.col-1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.col-1 p {
+    color: #fff;
+    font-size: 25px;
+}
+
+.col-1 h1{
+    color: #fff;
+    font-size: 65px;
+    margin: 25px 0px;
+}
+
+.col-1 .google-play-img{
+    height: 90px;
+}
+
+
+/* meia query */
+
+@media screen and (max-width: 1230px) {
+    .col-2 .phone-img {
+        height: 70%;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+
+    nav .nav-items {
+        display: none;
+    }
+    nav .nav-menu-icon {
+        display: block;
+        margin: auto;
+        color: var(--white)
+    }
+    nav .nav-menu-icon i {
+        font-size: 25px;
+
+    }
+    .col-2 .phone-img{
+        display: none;
+    }
+    .col-1 .google-play-img {
+         height: 50px;
+    }
+    .col-1 h1 {
+        font-size: 50px;
+     }
+     .col-1 p {
+         font-size: 20px;
+     }
+}
+
+
+
+

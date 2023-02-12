@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Roboto:wght@300;900&display=swap');
+body {
+    background-color: #d5d5d5;
+    font-family: 'Roboto', "sans-serif";
+    font-weight: 300;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+
+
+
+main {
+    /* border: 2px solid red; */
+    height:100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    width:100%;
+   
+}
+
+.image-top {
+
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.phone-img {
+    height: 487px;
+    margin-right: 60px;
+    
+
+}
+
+.form {
+
+    width:100%;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+
+.form-section {
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 75%;
+    margin-right: 90px;
+    /* margin-left: 50px; */
+}
+
+.form-section h2{
+    font-size: 40px;
+    margin: 25px 0;
+    color: #343333;
+    text-transform: capitalize;
+}
+
+input {
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: 1px solid #a7a7a7 ;
+    width:100%;
+    margin: 0 10px 10px 0px;
+
+}
+
+.row {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.btn {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #f59e2e;
+    border: none;
+    outline: none;
+    margin: 10px 0px;
+    border-radius: 8px;
+    transition: background-color 200ms ease-in-out ;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #1d1d1d;
+    
+}
+
+.btn-facebook{
+    background-color: #354c8d;
+}
+.btn-twitter{
+    background-color: #009fe9;
+}
+
+
+@media screen and (max-width: 900px){
+    .image-top {
+
+        width: 350px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .phone-img {
+        height: 400px;
+        margin-right: 60px;
+        
+    
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+    .image-top {
+
+        bottom: 0;
+        top: -100;
+        position: absolute;
+    }
+    .phone-img {
+        display:none;
+
+    }
+    .form-section{
+        /* border: 2px solid black; */
+        width:1030%;
+    }
+    
+}
+
+
+
+
+
+

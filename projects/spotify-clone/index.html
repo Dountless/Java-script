@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Spotify-clone</title>
+</head> 
+<body>
+    <nav class="navbar">
+        <ul class="navbar-container">
+            <li class="brand list"><img src="./img/logo.png" alt="Spotify logo"><span>Spotify</span></li>
+            <li class="list">Home</li>
+            <li class="list">About</li>
+        </ul>
+    </nav>
+    <main class="main-container">
+        <div class="col-left col">
+            <p>Best of NCS - No Copyright Sounds</p>
+            <div class="song-items">
+
+                <div class="song-item">
+                    <img src="./covers/10.jpg" alt="10">
+                    <span>Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i class="fa-regular fa-circle-play"></i></span> </span>
+                </div>
+                
+            </div>
+    </main>
+    <footer>
+        <input type="range" name="range" id="myprogressbar" min="0" max="100" value="0">
+        <div class="icons">
+            <i class="fa-solid fa-backward fa-3x" id="previous"></i>
+            <i class="fa-regular fa-circle-play fa-3x" id="masterPlay"></i>
+            <i class="fa-solid fa-forward fa-3x" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="./img/playing.gif" alt="music" id="gif">
+            <span class="songName" id="footname"></span>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/2f84265fac.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

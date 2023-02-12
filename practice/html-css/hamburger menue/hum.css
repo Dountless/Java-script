@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style:none;
+}
+.humberger-menue{
+
+    /* border:2px solid red; */
+    position:relative;
+}
+
+.humberger-menue input[type="checkbox"]{
+
+    position:absolute;
+    top:5px;
+    left:5px;
+    width:40px;
+    height:32px;
+    z-index:2;
+    opacity:0;
+}
+.humberger-lines{
+
+    width:40px;
+    height:32px;
+    /* background-color: aqua; */
+    position:absolute;
+    top:8px;
+    left:7px;
+    z-index:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin-top:1rem
+}
+
+.humberger-lines .line{
+
+    background-color: #222;
+    width:100%;
+    height:4px;
+    display:block;
+    border-radius:10px;
+}
+
+.menue-items{
+
+    /* border:2px solid green; */
+    padding-left:20px;
+
+    padding-top:90px;
+    transform:translateX(-100%);
+
+    transition: transform 0.5s ease-in-out;
+    
+    margin-top:-15px;
+    margin-left:-15px;
+    background-color: #232323;
+    padding-bottom:2rem;
+
+    width:400px;
+
+}
+
+.menue-items li{
+
+    margin-bottom:1.5rem;
+    color:white;
+}
+
+.humberger-menue input[type=checkbox]:checked ~ .menue-items{
+
+    transform: translateX(0%);
+    
+
+}
+
+.humberger-menue input[type=checkbox]:checked ~  .humberger-lines .line{
+
+    background-color:#fff;
+    transition:transform 0.4s ease-in-out;
+}
+
+.humberger-menue input[type=checkbox]:checked ~  .humberger-lines .line1{
+
+    transform:rotate(45deg);
+    transform-origin: top left;
+}
+.humberger-menue input[type=checkbox]:checked ~  .humberger-lines .line3{
+
+    transform:rotate(-45deg);
+    transform-origin:bottom left;
+}
+.humberger-menue input[type=checkbox]:checked ~  .humberger-lines .line2{
+
+    display:none;
+}
+
+
+/* 1. state check karni aani chahiy check box ki
+2.agar check box click hai to select karna hai menue items */
